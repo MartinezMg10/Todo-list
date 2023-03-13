@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.container_principal{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_list{
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+ .titulo{
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: rgba(255,255,255,255);
+ }
+ .titulo img{
+    height: 40px;
+ }
+
+.input_agregar input{
+    height: 45px;
+    width: 300px;
+    border-radius: 8px;
+    padding-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    border: 0;
+}
+
+.input_agregar button{
+    height: 45px;
+    width: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(14,155,238,255);
+    cursor: pointer;
+}
+
+
+.container_tareas{
+    background-color: white;
+    margin-top: 20PX;
+    height: 50px;
+    width: 350px;
+    display: flex;
+}
+
+.checkbox{
+    width: 20%;
+}
+
+.checkbox input{
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    border: 3px solid rgba(40,185,231,255);
+    margin-top: 10px;
+    margin-left: 5px;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='#FFF' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+}
+
+.checkbox input:checked {
+    
+    background-color: #FFF;
+    background-image: url("data:image/svg+xml,%3csvg height='30px' viewBox='0 0 16 16' fill='rgba(40,185,231,255)' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  }
+
+
+
+.parrafo{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+
+.boton{
+    width: 15%;
+}
+
+.boton button{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color:rgba(253,0,0,255);
+    cursor: pointer;
+}
+
+.boton button img{
+    height:20px
+}
+
