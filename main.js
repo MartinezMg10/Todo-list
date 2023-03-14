@@ -1,9 +1,11 @@
 const tareas = document.getElementById('container_list_tareas')
 const add = document.getElementById('add')
 
+let container = ''
+
 document.getElementById('agregar').addEventListener('click', ()=>{
     
-    var container = document.createElement('div')
+    container = document.createElement('div')
     const checkbox = document.createElement('div')
     const input_checkbox= document.createElement('input')
     const parrafo = document.createElement('div')
@@ -23,7 +25,6 @@ document.getElementById('agregar').addEventListener('click', ()=>{
 
     input_checkbox.type = 'checkbox'
     boton_agregar.id="eliminar"
-    img_boton.id="eliminar"
     boton_agregar.appendChild(img_boton)
 
     checkbox.appendChild(input_checkbox)
@@ -37,13 +38,15 @@ document.getElementById('agregar').addEventListener('click', ()=>{
     tareas.appendChild(container)
 
     add.value = ''
-})
 
+
+})
 
 document.addEventListener('click',(e)=>{
 
-
     if(e.target.id == 'eliminar'){
-        console.log("eliminar")}
+        tareas.removeChild(e.target.parentElement.parentElement)
+        }
+    })
 
 
